@@ -1,4 +1,4 @@
-import { addToCart } from './redux/action';
+import { addToCart, removeFromCart } from './redux/action';
 import { useDispatch } from 'react-redux';
 function App() {
 	const dispatch = useDispatch();
@@ -10,6 +10,7 @@ function App() {
 	};
 	const addToCartHandler = () => {
 		dispatch(addToCart(product));
+		dispatch(removeFromCart(product));
 	};
 	return (
 		<div className='App'>
