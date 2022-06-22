@@ -7,7 +7,7 @@ export const cartData = (data = initialData, { type, payload }) => {
 		case ADD_TO_CART:
 			return [...data, payload];
 		case REMOVE_FROM_CART:
-			data.length = data.length - 1;
+			data.length = data.length ? data.length - 1 : initialData;
 			return [...data];
 		case EMPTY_CART:
 			data = initialData;
