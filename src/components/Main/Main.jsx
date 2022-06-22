@@ -9,11 +9,11 @@ const Main = () => {
 
 	// const cartData = useSelector(state => state.cartData);
 
-	const cartData = useSelector(state => state.cartData);
-	console.log(cartData);
+	// const cartData = useSelector(state => state.cartData);
+	// console.log(cartData);
 
-	const productData = useSelector(state => state.productData);
-	console.log(productData);
+	// const productData = useSelector(state => state.productData);
+	// console.log(productData);
 
 	const product = {
 		name: 'iPhone 13',
