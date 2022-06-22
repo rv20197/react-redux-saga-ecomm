@@ -11,7 +11,7 @@ export const cartData = (data = initialData, { type, payload }) => {
 			return [...data];
 		case EMPTY_CART:
 			data = initialData;
-			return data;
+			return [...data];
 		default:
 			return data;
 	}
