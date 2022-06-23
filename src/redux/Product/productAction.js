@@ -1,4 +1,4 @@
-import { PRODUCT_LIST } from './constant';
+import { PRODUCT_LIST } from '../constant';
 
 export const productListing = async payload => {
 	let data = await fetch('https://jsonplaceholder.typicode.com/todos/1');

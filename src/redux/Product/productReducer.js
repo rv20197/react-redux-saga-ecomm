@@ -1,4 +1,4 @@
-import { PRODUCT_LIST } from './constant';
+import { PRODUCT_LIST } from '../constant';
 const initialData = [];
 
 export const productData = (data = initialData, { type, payload }) => {

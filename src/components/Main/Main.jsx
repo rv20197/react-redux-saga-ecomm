@@ -1,19 +1,21 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { addToCart, removeFromCart, emptyCart } from '../../redux/cartAction';
-import { productListing } from '../../redux/productAction';
+import {
+	addToCart,
+	removeFromCart,
+	emptyCart
+} from '../../redux/Cart/cartAction';
+import { productListing } from '../../redux/Product/productAction';
 
 const Main = () => {
 	const dispatch = useDispatch();
 
-	// const cartData = useSelector(state => state.cartData);
+	const cartData = useSelector(state => state.cartData);
+	console.log(cartData);
 
-	// const cartData = useSelector(state => state.cartData);
-	// console.log(cartData);
-
-	// const productData = useSelector(state => state.productData);
-	// console.log(productData);
+	const productData = useSelector(state => state.productData);
+	console.log(productData);
 
 	const product = {
 		name: 'iPhone 13',
