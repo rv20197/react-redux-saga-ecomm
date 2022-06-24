@@ -1,0 +1,40 @@
+{
+	"product": [
+		{
+			"id": 1,
+			"productName": "Samsung S22",
+			"color": "White",
+			"price": 72000,
+			"category": "Mobile",
+			"brand": "Samsung",
+			"image": "https://www.digitaltrends.com/wp-content/uploads/2022/05/galaxy-s22-angled-shot.jpg"
+		},
+		{
+			"id": 2,
+			"productName": "Samsung S21",
+			"color": "White",
+			"price": 62000,
+			"category": "Mobile",
+			"brand": "Samsung",
+			"image": "https://www.digitaltrends.com/wp-content/uploads/2022/05/galaxy-s22-angled-shot.jpg"
+		},
+		{
+			"id": 3,
+			"productName": "Samsung S20",
+			"color": "White",
+			"price": 52000,
+			"category": "Mobile",
+			"brand": "Samsung",
+			"image": "https://www.digitaltrends.com/wp-content/uploads/2022/05/galaxy-s22-angled-shot.jpg"
+		},
+		{
+			"id": 4,
+			"productName": "Samsung S10",
+			"color": "White",
+			"price": 42000,
+			"category": "Mobile",
+			"brand": "Samsung",
+			"image": "https://www.digitaltrends.com/wp-content/uploads/2022/05/galaxy-s22-angled-shot.jpg"
+		}
+	]
+}
