@@ -12,11 +12,9 @@ const Main = () => {
 	const dispatch = useDispatch();
 
 	const cartData = useSelector(state => state.cartData);
-	console.log(cartData);
 
 	const productData = useSelector(state => state.productData);
-	console.log(productData);
-
+	console.log('Data in main component from Saga: ', productData);
 	const product = {
 		name: 'iPhone 13',
 		type: 'Mobile',
