@@ -17,8 +17,6 @@ const Main = () => {
 	const productData = useSelector(state => state.productData);
 
 	const productListingHandler = () => dispatch(productListing());
-	const addToCartHandler = product => dispatch(addToCart(product));
-	const removeFromCartHandler = product => dispatch(removeFromCart(product.id));
 	const emptyCartHandler = () => dispatch(emptyCart());
 
 	useEffect(() => {
