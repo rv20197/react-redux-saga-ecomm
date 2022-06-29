@@ -8,8 +8,8 @@ export const cartData = (data = initialData, { type, payload }) => {
 			return [...data, payload];
 		case REMOVE_FROM_CART:
 			const newData = data.map(value => ({ ...value }));
-			newData.length = newData.length ? newData.length - 1 : initialData;
-			return [...newData];
+			const remainingItems = newData.filter(item => item.id !== payload);
+			return [...remainingItems];
 		case EMPTY_CART:
 			data = initialData;
 			return [...data];
