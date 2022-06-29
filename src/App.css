@@ -35,3 +35,36 @@
 	right: 0;
 	text-align: center;
 }
+
+.cart-page-container {
+	display: flex;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.cart-page-container__table {
+	flex: 65%;
+	border-collapse: collapse;
+}
+
+.cart-page-container__table td {
+	border: 1px solid #ccc;
+	padding: 15px;
+}
+
+.price-details {
+	flex: 35%;
+	margin: 0 2rem;
+}
+
+.adjust-price {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #ddd;
+}
+
+.adjust-price span {
+	font-size: 20px;
+}
