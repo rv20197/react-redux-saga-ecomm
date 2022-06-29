@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import {
@@ -16,12 +15,15 @@ const Main = () => {
 
 	const productData = useSelector(state => state.productData);
 
-	const productListingHandler = () => dispatch(productListing());
+	const productListingHandler = useCallback(() => {
+		dispatch(productListing());
+	}, [dispatch]);
+
 	const emptyCartHandler = () => dispatch(emptyCart());
 
 	useEffect(() => {
 		productListingHandler();
-	}, []);
+	}, [productListingHandler]);
 
 	return (
 		<>
@@ -43,10 +45,12 @@ const Main = () => {
 						<div>Category: {item.category}</div>
 						<div>Brand: {item.brand}</div>
 						<div>
-							<button onClick={() => dispatch(addToCart(item))}>
+							<button className='btn' onClick={() => dispatch(addToCart(item))}>
 								Add to Cart
 							</button>
-							<button onClick={() => dispatch(removeFromCart(item.id))}>
+							<button
+								className='btn'
+								onClick={() => dispatch(removeFromCart(item.id))}>
 								Remove from Cart
 							</button>
 						</div>
